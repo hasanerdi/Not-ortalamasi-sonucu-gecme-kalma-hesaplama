@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+
+        //Degiskenler ok
+        int mat, turkce, fizik, kimya, bio ;
+
+        //Scanner sınıfı tanımlandı ok
+        Scanner girilenler = new Scanner(System.in) ;
+
+        //verileri al
+        System.out.println("mat notunuz : ");
+        mat = girilenler.nextInt();
+
+        System.out.println("turkce notunuz : ");
+        turkce = girilenler.nextInt();
+
+        System.out.println("fizik notunuz: " );
+        fizik = girilenler.nextInt();
+
+        System.out.println(" kimya notunuz: ");
+        kimya = girilenler.nextInt();
+
+        System.out.println(" bio notunuz : ");
+        bio = girilenler.nextInt();
+
+        int toplam = ( mat+turkce+fizik+kimya+bio) ;
+        double sonuc = toplam/6 ;
+        System.out.println("not ortalaması = " + sonuc );
+
+        boolean Gecti = (sonuc > 60) ;
+        boolean Kaldı = ( sonuc < 60) ;
+
+        String cevap = Gecti ? " Tebrikler ***sınıfı gectiniz***" : "sınıfta kaldınız.";
+        System.out.println(cevap);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
